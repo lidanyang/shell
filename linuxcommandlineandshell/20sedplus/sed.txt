@@ -1,0 +1,40 @@
+多行命令
+N将数据流的下一行加进来创建一个多行组
+D删除多行组中的一行
+P打印多行组中的一行
+
+next命令
+单行:
+sed '/header/{n ; d}' data1
+
+合并文本行:
+$ sed '/first/{ N :s/\n/ / }' data2
+
+$sed '
+N
+s/System\nAdministrator/Desktop\nUser/
+s/System Administrator/Desktop User/
+' data3
+问题:最后一行匹配不准
+
+$sed '
+s/System Administrator/Desktop User/
+N
+s/System\nAdministrator/Desktop\nUser/
+' data3
+
+多行删除命令
+sed 'N ; /Sytem\nAdministrator/d' data4
+删除模式空间中的所有行
+
+sed 'N ; /System\nAdministrator/D' data4
+只删除模式空间第一行
+
+sed '/^$/{N ; /header/D}'
+
+多行打印
+sed 'N ; /System\nAdministrator/P' data3
+只打印模式空间中的第一行
+
+
+
