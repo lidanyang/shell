@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#sed option script file
+
+BEGIN
+
+END
+
+#1.文本替换
+echo "This is a test"|sed 's/test/big test/'
+=============
+替换标记:
+数字替换第几处模式匹配的地方
+g 替换所有
+p 原来行内容打印
+w file 将替换结果写入文件
+=============
+
+sed 's/\/bin\/bash/\/bin\/csh/' /etc/passwd
+
+
+sed 寻址
+'2s/dog/cat/'
+'2,3s/dog/cat/'
+'2,$s/dog/cat/'
+'/rexgrep/s/dog/cat/'
+'2{s/dog/cat/;s/brown/green/}'
+
+
+
+
+
+#sed multiple line
+sed -e 's/brown/green/
+s/fox/elephant/
+s/dog/cat
+' data1
+
+#指定脚本文件
+$cat script
+s/brown/green/
+s/fox/elephant/
+s/dog/cat
+$sed -f script data1
+
+
