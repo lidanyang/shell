@@ -1,0 +1,8 @@
+function myprint()
+{
+	printf "%-16s - %s\n",$1,$4
+}
+function printthird()
+{
+	print $3
+}
