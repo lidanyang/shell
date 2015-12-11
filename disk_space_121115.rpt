@@ -1,0 +1,26 @@
+Top Ten Disk Space Usage
+for /var/log /home directories
+
+The  Directory:
+1:	7724	/var/log
+2:	1772	/var/log/installer
+3:	976	/var/log/postgres-xc
+4:	836	/var/log/upstart
+5:	532	/var/log/apt
+6:	60	/var/log/lightdm
+7:	44	/var/log/samba
+8:	28	/var/log/mysql
+9:	28	/var/log/cups
+10:	20	/var/log/ConsoleKit
+
+The  Directory:
+1:	32594520	/home/ldy/.local/share/Trash/files
+2:	17240244	/home/ldy/VirtualBox
+3:	11283088	/home/ldy/下载
+4:	5485636	/home/ldy/VirtualBox
+5:	4339844	/home/ldy/VirtualBox
+6:	1457484	/home/ldy/python/【4】Pyhon实战开发
+7:	1181316	/home/ldy/python/【2】python进阶/【2】Python搜索爬虫抓取超高清视频教程
+8:	1134936	/home/ldy/python/【3】python运维/【2】Python运维系统开发（全36集）
+9:	929108	/home/ldy/python/【3】python运维/【1】Python高级运维编程实战精品入门进阶（全27集）
+10:	836292	/home/ldy/.cache/tracker
