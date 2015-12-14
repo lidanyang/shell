@@ -1,0 +1,7 @@
+while getopts xy options
+do
+    case $options in 
+    x) echo "you entered -x as an option";;
+    y) echo "you entered -y as an option";;
+    esac
+done
